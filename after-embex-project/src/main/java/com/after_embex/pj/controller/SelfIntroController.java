@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class SelfIntroController {
+	// トップページを表示する
+	@GetMapping("/self-intro")
+	public String showTop() {
+		return "index";
+	}
 	
 	// 仁田峠の自己紹介ページを表示する
 	@GetMapping("/self-intro/nitatoge")
