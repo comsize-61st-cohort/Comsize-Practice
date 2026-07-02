@@ -6,6 +6,7 @@
 	<link th:href="@{/css/common.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<span th:text="|おいどんは、「${name}」という者っす。|"></span>
+	<div th:text="|おいどんは、「${name}」という者っす。|"></div>
+	<a th:href="@{/self-intro}" th:text="トップページへ戻る"></a>
 </body>
 </html>
