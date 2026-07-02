@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>トップページ</title>
+	<link th:href="@{/css/common.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div>コンサイズ61期 自己紹介サイト</div>
+	<ul>
+		<li>
+			<a th:href="@{/self-intro/nakaide}" th:text="中出の自己紹介ページへ"></a>
+		</li>
+		<li>
+			<a th:href="@{/self-intro/sasaki}" th:text="佐々木の自己紹介ページへ"></a>
+		</li>
+		<li>
+			<a th:href="@{/self-intro/sato}" th:text="佐藤の自己紹介ページへ"></a>
+		</li>
+		<li>
+			<a th:href="@{/self-intro/nitatoge}" th:text="仁田峠の自己紹介ページへ"></a>
+		</li>
+	</ul>
+</body>
+</html>
