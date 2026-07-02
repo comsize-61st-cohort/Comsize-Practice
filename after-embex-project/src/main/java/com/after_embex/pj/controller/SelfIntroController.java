@@ -12,20 +12,28 @@ public class SelfIntroController {
 		return "index";
 	}
 	
-	// 仁田峠の自己紹介ページを表示する
-	@GetMapping("/self-intro/nitatoge")
-	public String IntroNitatoge(Model model) {
-		model.addAttribute("name", "仁田峠 達也");
-		return "nitatoge";
+	// 中出の自己紹介ページを表示する
+	@GetMapping("/self-intro/nakaide")
+	public String IntroNakaide(Model model) {
+		return "nakaide";
 	}
 	
-	@GetMapping("/sasaki")
+	// 佐々木の自己紹介ページを表示する
+	@GetMapping("/self-intro/sasaki")
 	public String IntroSasaki() {
 		return "sasaki";
 	}
-
-    @GetMapping("/sato")
+	
+	// 佐藤の自己紹介ページを表示する
+    @GetMapping("/self-intro/sato")
     public String IntroSato() {
       return "sato";
     }
+    
+    // 仁田峠の自己紹介ページを表示する
+ 	@GetMapping("/self-intro/nitatoge")
+ 	public String IntroNitatoge(Model model) {
+ 		model.addAttribute("name", "仁田峠 達也");
+ 		return "nitatoge";
+ 	}
 }
