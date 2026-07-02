@@ -5,9 +5,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class SelfIntroController {
-	@GetMapping(name = "nitatoge")
+	@GetMapping("/nitatoge")
 	public String IntroNitatoge() {
 		return "nitatoge";
+	}
+	
+	@GetMapping("/sasaki")
+	public String IntroSasaki() {
+		return "sasaki";
 	}
 
 }
