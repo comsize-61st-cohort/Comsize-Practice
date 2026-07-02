@@ -18,6 +18,11 @@ public class SelfIntroController {
 		model.addAttribute("name", "仁田峠 達也");
 		return "nitatoge";
 	}
+	
+	@GetMapping("/sasaki")
+	public String IntroSasaki() {
+		return "sasaki";
+	}
 
     @GetMapping("/sato")
     public String IntroSato() {
