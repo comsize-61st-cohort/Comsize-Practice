@@ -10,4 +10,8 @@ public class SelfIntroController {
 		return "nitatoge";
 	}
 
+    @GetMapping("/sato")
+    public String IntroSato() {
+      return "sato";
+    }
 }
