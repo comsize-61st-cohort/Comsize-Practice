@@ -1,0 +1,35 @@
+diff a/src/main/java/model/dao/ConnectionManager.java b/src/main/java/model/dao/ConnectionManager.java	(rejected hunks)
+@@ -6,21 +6,19 @@
+ 
+ public class ConnectionManager {
+ 
+-	
+-	private static String URL = "jdbc:mysql://localhost:3306/task_db";
+-	private static String USER = "root";
+-	private static String PASSWORD ="root";
+-	
+-	
++	//DB接続用のurl
++	private final static String URL = "jdbc:mysql://localhost:3306/task_db";
++	private final static String USER = "root";
++	private final static String PASSWORD = "root";
++
++	//メソッドの定義
+ 	public static Connection getConnection() throws SQLException, ClassNotFoundException {
+ 
+-		// JDBCドライバの読み込み
++		//JDBCの読み取り
+ 		Class.forName("com.mysql.cj.jdbc.Driver");
++
+ 		return DriverManager.getConnection(URL, USER, PASSWORD);
+-		
+-		
++
+ 	}
+-	
+-	
+-	
+-}
++
++}
+\ No newline at end of file
